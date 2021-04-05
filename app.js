@@ -26,7 +26,11 @@ app.use("/api/v1/applications", applicationsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-    res.setHeader("Access-Control-Allow-Origin");
+    res.setHeader(
+        "Access-Control-Allow-Origin",
+        "http://localhost:3000",
+        "https://mahajancyberworld.co.in"
+    );
 
     res.setHeader(
         "Access-Control-Allow-Methods",
