@@ -28,8 +28,7 @@ app.use("/api/v1/applications", applicationsRouter);
 app.use(function (req, res, next) {
     res.setHeader(
         "Access-Control-Allow-Origin",
-        "http://localhost:3000",
-        "https://mahajancyberworld.co.in"
+        "http://localhost:3000" || "https://mahajancyberworld.co.in"
     );
 
     res.setHeader(
