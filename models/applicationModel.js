@@ -8,7 +8,7 @@ const applicationSchema = new mongoose.Schema({
         type: String,
     },
     noOfVacancies: {
-        type: Number,
+        type: String,
     },
     qualification: {
         type: String,
