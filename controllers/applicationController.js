@@ -16,7 +16,7 @@ exports.postApplication = async (req, res, next) => {
 
 exports.getAllApplications = async (req, res, next) => {
     try {
-        const applicationQuery = await Application.find();
+        const applicationQuery = await Application.find().sort({ Date: -1 });
         res.status(200).json({
             status: "success",
             data: {

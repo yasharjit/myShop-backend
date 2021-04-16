@@ -19,6 +19,10 @@ const applicationSchema = new mongoose.Schema({
     lastDate: {
         type: String,
     },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+    },
 });
 
 const Application = mongoose.model("Application", applicationSchema);
