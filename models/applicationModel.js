@@ -14,7 +14,7 @@ const applicationSchema = new mongoose.Schema({
         type: String,
     },
     age: {
-        type: Number,
+        type: String,
     },
     lastDate: {
         type: String,
