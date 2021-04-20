@@ -17,7 +17,7 @@ const applicationSchema = new mongoose.Schema({
         type: String,
     },
     lastDate: {
-        type: String,
+        type: Date,
     },
     createdAt: {
         type: Date,

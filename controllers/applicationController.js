@@ -16,9 +16,9 @@ exports.postApplication = async (req, res, next) => {
 
 exports.getAllApplications = async (req, res, next) => {
     try {
-        const applicationQuery = await Application.find().sort([
-            ["createdAt", -1],
-        ]);
+        const applicationQuery = await Application.find({
+            lastDate: { $gte: Date(Date.now()) },
+        }).sort([["createdAt", -1]]);
         res.status(200).json({
             status: "success",
             data: {
